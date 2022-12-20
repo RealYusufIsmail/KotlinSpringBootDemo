@@ -1,5 +1,6 @@
 package io.github.realyusufismail.kotlinspringbootdemo
 
+import org.springframework.boot.Banner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -7,5 +8,7 @@ import org.springframework.boot.runApplication
 class KotlinSpringBootDemoApplication
 
 fun main(args: Array<String>) {
-    runApplication<KotlinSpringBootDemoApplication>(*args)
+    runApplication<KotlinSpringBootDemoApplication>(*args) {
+        setBannerMode(Banner.Mode.OFF)
+    }
 }
